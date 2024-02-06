@@ -1,0 +1,598 @@
+/* Global Style */
+body{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+:root{
+    --brand-default-color:#ff1944;
+    --brand-secondary-color:#212121;
+    --white-color:#FFF;
+
+}
+@font-face {
+    font-family:"Tajawal-Bold";
+    src: url(../fonts/Tajawal-Bold.ttf);
+    font-display: swap;
+
+}
+@font-face {
+    font-family:"Tajawal-Medium";
+    src: url(../fonts/Tajawal-Medium.ttf);
+    font-display: swap;
+
+}
+@font-face {
+    font-family:"Tajawal-ExtraBold";
+    src: url(../fonts/Tajawal-ExtraBold.ttf);
+    font-display: swap;
+
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--brand-default-color); 
+    border-radius: 12px;
+  }
+
+.special-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+    margin-bottom: 30px;
+    font-family:"Tajawal-ExtraBold",sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: var(--brand-secondary-color);
+   
+
+    
+}
+.special-heading::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 140px;
+    height: 6px;
+    border-radius: 12px;
+    background-color: var(--brand-default-color);
+   
+
+    
+}
+
+
+@media (max-width:576px){
+  .special-heading {
+
+    font-size: 35px;
+
+   
+  }
+    
+}
+@media (min-width:576px) and (max-width:1200px){
+  .special-heading {
+
+    font-size: 50px;
+
+  
+    
+}
+}
+
+/* Global Style */
+
+
+
+/* Start Header Style */
+
+header{
+ 
+    padding: 20px 0;
+    background-color: var(--white-color);
+}
+header .logo img{
+    width: 150px;
+}
+header .language a{
+    font-family:"Tajawal-Medium",sans-serif;
+
+    text-decoration: none;
+    color: var(--brand-default-color);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media(max-width:576px){
+  header{
+    padding: 10px 5px;
+  }
+}
+
+/* End Header Style */
+
+
+/* Start main banner Style */
+.main-banner{
+    min-height: 500px;
+   
+}
+.main-banner .wrapper{
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.459) 0, rgba(255, 255, 255, .99) 99%, #fff 100%),url(../images/javier-trueba-iQPr1XkF5F0-unsplash.jpg);
+  background-size: cover;
+  padding: 40px 0 100px 0;
+}
+
+.main-banner  p{
+    font-family:"Tajawal-Bold",sans-serif;
+
+    font-size: 20px;
+    color: var(--brand-secondary-color);
+    margin-bottom: 20px;
+}
+.main-banner .content span{
+    display: block;
+    font-family:"Tajawal-Medium",sans-serif;
+    font-size: 25px;
+    color: var(--white-color);
+}
+.main-banner .content .advantages{
+    padding: 10px;
+    background-color: var(--white-color);
+    border-radius: 40px;
+    margin:20px  auto 0 auto;
+}
+.main-banner .content .advantages .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.main-banner .content .advantages .icon {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--brand-default-color);
+   margin: 0 10px;
+animation: pulse-animation 2s infinite;
+
+}
+
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+.main-banner .content .advantages .icon  img{
+   width: 35px;
+  
+}
+.main-banner .content .advantages .item .text span{
+    color: var(--brand-default-color);
+}
+
+
+@media(max-width:576px){
+  .main-banner {
+    text-align: center;
+  }
+  .main-banner {
+    text-align: center;
+  }
+ 
+.main-banner p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-banner .content .advantages .item {
+  display: block;
+  text-align: center;
+  width: 50%;
+}
+.main-banner .content .advantages .icon {
+ width: 40px;
+ height: 40px;
+ margin: auto;
+ animation: none;
+
+
+}
+.main-banner .content .advantages .icon  img{
+  width: 25px;
+
+ 
+}
+}
+@media(min-width:576px) and (max-width:768px){
+  .main-banner {
+    padding:0 20px;
+  }
+  .main-banner .content h1{
+    font-size: 60px;
+  }
+.main-banner .content h3{
+    font-size: 50px;
+}
+.main-banner .content span{
+  
+    font-size:25px;
+   
+}
+.main-banner .content .advantages .icon {
+  width: 50px;
+  height: 50px;
+ 
+ 
+ }
+ .main-banner .content .advantages .icon  img{
+  width: 30px;
+
+ 
+}
+}
+
+/* End main banner Style */
+
+
+/* Start Fill Application Section */
+.fill-application{
+    padding:0 0 80px 0 ;
+    margin-top: -120px;
+    font-family: "Tajawal-Medium",sans-serif;
+    overflow: hidden;
+
+}
+@media (max-width:576px) {
+  .fill-application{
+    padding: 20px 0 ;
+
+
+}
+  
+}
+
+ .fill-application .description {
+   margin-bottom: 30px;
+
+   }
+ .fill-application .registeration{
+    margin: auto;
+    background: #fff;
+    border-radius: 20px;
+    /* transform: translateY(-100px); */
+    box-shadow: 0px 0 20px #e6e6e6;
+    padding: 60px 30px;
+    position: relative;
+
+   }
+
+
+   
+   .fill-application .registeration .flex-box {
+    display: flex;
+    justify-content: space-between;
+   }
+   .fill-application .registeration .form-group{
+    width: 100%;
+    font-family: "Tajawal-Medium",sans-serif;
+    margin-bottom: 20px;
+
+   }
+   .fill-application .registeration .form-group .error-message{
+     color: rgb(218, 31, 31);
+   }
+   .fill-application .registeration .input-container{
+    width: 100%;
+    position: relative;
+    min-height: 50px;
+
+   }
+   .fill-application .registeration .textarea-container{
+    font-family: "Tajawal-Medium",sans-serif;
+    width: 100%;
+    position: relative;
+    height:130px
+
+   }
+
+
+   .fill-application .registeration .input-container input,
+   .fill-application .registeration .input-container select {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    outline: none;
+    font-size: 17px;
+    color: #666;
+    border-radius: 10px;
+    border: 2px solid #ebebeb;
+    background-color: var(--white-color);
+    transition: all .4s ease-in-out;
+    font-family: "Tajawal-Medium",sans-serif;
+
+   }
+   .fill-application .registeration textarea {
+    position: absolute;
+    width: 100%;
+    height:130px;
+    padding:  20px;
+    outline: none;
+    font-size: 17px;
+    color: #666;
+    border-radius: 10px;
+    border: 2px solid #ebebeb;
+    background-color: var(--white-color);
+
+    transition: all .4s ease-in-out;
+    font-family: "Tajawal-Medium",sans-serif;
+    resize: none;
+   }
+   .fill-application .registeration .input-container label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .9rem;
+    color:var(--text-color);
+    padding: 0 10px;
+    background-color: #FFF;
+    margin: 0 10px;
+    transition: all .2s ease-in-out;
+    pointer-events: none;
+
+
+
+
+   
+    
+   }
+   .fill-application .registeration .textarea-container label{
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    font-size: .9rem;
+    color:var(--text-color);
+    padding: 0 10px;
+    background-color: #FFF;
+    margin: 0 10px;
+    transition: all .2s ease-in-out;
+   }
+
+   .fill-application .registeration .input-container input:focus,
+   .fill-application .registeration .input-container input:not(:placeholder-shown),
+   .fill-application .registeration .input-container select:focus,
+   .fill-application .registeration .input-container select:valid,
+   .fill-application .registeration  textarea:focus,
+   .fill-application .registeration  textarea:not(:placeholder-shown){
+    border-color: var(--brand-secondary-color);
+   }
+   .fill-application .registeration .input-container input:focus,
+   .fill-application .registeration .input-container input:not(:placeholder-shown),
+   .fill-application .registeration .input-container select:focus,
+   .fill-application .registeration .input-container select:valid{
+    border-color: #ebebeb;
+   }
+   .fill-application .registeration .input-container input:focus + label,
+   .fill-application .registeration .input-container input:not(:placeholder-shown) + label,
+   .fill-application .registeration .input-container select:focus + label,
+   .fill-application .registeration .input-container select:valid + label,
+   .fill-application .registeration  textarea:focus + label,
+   .fill-application .registeration  textarea:not(:placeholder-shown) + label{
+    color:var(--brand-default-color);
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-1px,-40px) scale(0.88);
+
+
+   }
+ 
+   .fill-application .registeration .action{
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Tajawal-Medium",sans-serif;
+
+   }
+   .fill-application .registeration .action .main_btn{
+    padding: 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    background-color: var(--brand-default-color);
+    color: #FFF;
+    border-radius: 10px;
+    margin: auto;
+    font-family: "Tajawal-Medium",sans-serif;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+   }
+   .fill-application .registeration .action .main_btn:hover{
+    background-color: var(--brand-secondary-color);
+   }
+   .fill-application .registeration .action .main_btn .animation span{
+    
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background: #FFF;
+    border-radius: 50%;
+  
+   }
+   .fill-application .registeration .action .main_btn .animation span:nth-of-type(1){
+    animation: moving 1s linear 0s infinite;
+   }
+   .fill-application .registeration .action .main_btn .animation span:nth-of-type(2){
+    animation: moving 1s linear 0.3s infinite;
+   }
+   .fill-application .registeration .action .main_btn .animation span:nth-of-type(3){
+    animation: moving 1s linear .6s infinite;
+   }
+
+   @keyframes moving {
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-15px);
+    }
+    0%{
+      transform: translateY(0);
+    }
+    
+   }
+   @media(max-width:992px) {
+    .fill-application .registeration .flex-box{
+        display: block;
+    }
+    .fill-application .registeration .flex-box .form-group{
+        width: 100% !important;
+    }
+    
+   }
+
+   @media (max-width:576px){
+    .fill-application .registeration{
+        width: 100%;
+        padding: 50px 10px;
+
+    }
+    .fill-application .registeration::after,
+    .fill-application .registeration::before {
+      display: none;
+    }
+    .fill-application .registeration .action .main_btn{
+      width: 100% !important;
+    }
+  
+   }
+  
+
+   
+
+/* End Fill Application Section */
+
+
+
+/* Start CopyRights Style */
+.copyrights{
+    background-color:  var(--brand-default-color);
+    font-family:"Tajawal-Medium",sans-serif;
+    color: var(--brand-secondary-color);
+
+}
+.copyrights .pages span{
+  padding: 0 10px;
+  display: inline-block;
+}
+.copyrights .pages{
+  border-bottom: 1px solid #EEE;
+}
+.copyrights .pages span a{
+  text-decoration: none;
+  color: #FFF;
+}
+.copyrights .pages span a:hover{
+  text-decoration: none;
+  color: var(--brand-secondary-color);
+}
+
+/* End CopyRights Style */
+
+
+
+
+
+
+/* Start pop up alert message section */
+
+.pop-up-alert-message{
+    position: fixed;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    padding:15px 10px;
+    color: #FFF;
+    text-align: center;
+    z-index: 9999999;
+    font-family: "Tajawal-Medium",monospace,sans-serif;
+    transition: all .6s ease-in-out;
+    border-radius: 10px;
+
+
+}
+.pop-up-alert-message .flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pop-up-alert-message .flex-box >span:first-of-type{
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+}
+.pop-up-alert-message .flex-box >span:first-of-type span{
+    padding: 0 5px;
+    font-family: "Tajawal-Medium",monospace,sans-serif;
+
+}
+.pop-up-alert-message .flex-box >span:last-of-type{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+   .pop-up-alert-message.active{
+    bottom: 100px;
+}
+   .pop-up-alert-message.success{
+    background-color: #1bc95a;
+}
+   .pop-up-alert-message.error{
+    background-color: #ea4545;
+}
+
+   .pop-up-alert-message .close-alert{
+      cursor: pointer;
+   }
+
+@media (max-width:576px) {
+
+    .pop-up-alert-message{
+        width: 80%;
+    }
+    .pop-up-alert-message.active{
+      bottom: 40px;
+  }
+    }
+
+/* end pop up alert message section */
