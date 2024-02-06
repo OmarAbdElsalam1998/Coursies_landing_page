@@ -130,13 +130,13 @@ header .language a{
 
 /* Start main banner Style */
 .main-banner{
-    min-height: 500px;
+  padding: 40px 0 100px 0;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.459) 0, rgba(255, 255, 255, .99) 99%, #fff 100%),url(../images/main_image.webp);
+  background-size: cover;
    
 }
 .main-banner .wrapper{
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.459) 0, rgba(255, 255, 255, .99) 99%, #fff 100%),url(../images/javier-trueba-iQPr1XkF5F0-unsplash.jpg);
-  background-size: cover;
-  padding: 40px 0 100px 0;
+
 }
 
 .main-banner  p{
@@ -197,6 +197,8 @@ animation: pulse-animation 2s infinite;
 @media(max-width:576px){
   .main-banner {
     text-align: center;
+    padding: 40px 0 60px 0;
+
   }
   .main-banner {
     text-align: center;
@@ -227,8 +229,9 @@ animation: pulse-animation 2s infinite;
 }
 }
 @media(min-width:576px) and (max-width:768px){
-  .main-banner {
-    padding:0 20px;
+  .main-banner{
+    padding: 40px 0 60px 0;
+
   }
   .main-banner .content h1{
     font-size: 60px;
@@ -260,18 +263,10 @@ animation: pulse-animation 2s infinite;
 /* Start Fill Application Section */
 .fill-application{
     padding:0 0 80px 0 ;
-    margin-top: -120px;
+    margin-top: -50px;
     font-family: "Tajawal-Medium",sans-serif;
     overflow: hidden;
 
-}
-@media (max-width:576px) {
-  .fill-application{
-    padding: 20px 0 ;
-
-
-}
-  
 }
 
  .fill-application .description {
